@@ -5,12 +5,13 @@
             <script type="text/javascript" src="js/main.js"></script>
         </head>
         <body>
+            <p>Boletins<p>
             <form action="" method="POST">
                 <input type="text" id="phrase" name="phrase" placeholder="Buscar boletim" >
                 <input type="submit" value="Buscar boletim">
             </form>
-
-            <div id="lista" style="background-color: blue;">Lista de Boletins
+            <br>
+            <div id="lista" style="background-color: blue;">
                 <?php
                     $boletins[0]['titulo'] = "Janeiro de 2020 teve fortes chuvas";
                     $boletins[0]['subtitulo'] = "Este é um subtitulo";
@@ -30,8 +31,6 @@
                                 echo $boletins[$i]['titulo'];echo "<br>";
                                 echo $boletins[$i]['subtitulo'];echo "<br>";
                                 $count++;
-                                echo $count;
-                                echo "<br>";
                             }
                         }
                         if($count==0){
