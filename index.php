@@ -2,7 +2,6 @@
     <html lang="pt-br">
         <head>
             <meta charset="UTF-8"/>
-            <script type="text/javascript" src="js/main.js"></script>
         </head>
         <body>
             <p>Boletins<p>
@@ -23,7 +22,7 @@
                     $boletins[3]['subtitulo'] = "Este é um subtitulo";
                     $boletins[4]['titulo'] = "Junho teve fortes chuvas";
                     $boletins[4]['subtitulo'] = "Este é um subtitulo";
-                    
+
                     if($_POST['phrase']!=null && $_POST['phrase']!=""){
                         $count=0;
                         for($i=0;$i<=4;$i++){
@@ -44,11 +43,7 @@
 
                         }
                     }
-                
-
-                   
-
                 ?>
-                </div>
+            </div>
         </body>
     </html>
