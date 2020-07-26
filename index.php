@@ -40,7 +40,6 @@
                         for($i=0;$i<=4;$i++){
                             echo $boletins[$i]['titulo'];echo "<br>";
                             echo $boletins[$i]['subtitulo'];echo "<br>";
-
                         }
                     }
                 ?>
