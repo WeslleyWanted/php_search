@@ -28,7 +28,7 @@
                     
                     if($_POST['phrase']!=null && $_POST['phrase']!=""){
                         for($i=0;$i<=4;$i++){
-                            if(stripos($boletins[$i]['titulo'],$_POST['phrase'])!=false){
+                            if(strIpos($boletins[$i]['titulo'],$_POST['phrase'])>-1){
                                 echo $boletins[$i]['titulo'];echo "<br>";
                                 echo $boletins[$i]['subtitulo'];echo "<br>";
 
