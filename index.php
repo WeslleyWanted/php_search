@@ -23,7 +23,7 @@
                     $boletins[4]['titulo'] = "Junho teve fortes chuvas";
                     $boletins[4]['subtitulo'] = "Este é um subtitulo";
 
-                    if($_POST['phrase']!=null && $_POST['phrase']!=""){
+                    if(isset($_POST['phrase']) && $_POST['phrase']!=""){
                         $count=0;
                         for($i=0;$i<=4;$i++){
                             if(strIpos($boletins[$i]['titulo'],$_POST['phrase'])>-1){
